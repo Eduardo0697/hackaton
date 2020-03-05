@@ -8,12 +8,18 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
   </head>
   <body>
 
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-            <a class="navbar-brand" href="#">Navbar</a>
+        <div class="my-3"> 
+            <img class="d-block mx-auto" src="https://www.ssc.cdmx.gob.mx/themes/base/assets/images/logos/Logo_Dependencia.png" alt="">
+        
+        </div>
+            
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">MULTAS</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
@@ -21,7 +27,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  <a class="nav-link" href="#">FAQ <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#">Link</a>
@@ -51,149 +57,109 @@
 
     <div class="container">
         <div class="my-3">
-            <h3>Casos frecuentes</h3>
+            <h3>Busca tu caso</h3>
         </div>
         
-        <div id="contenedorCards"  class="container mt-5">
+        <div id="contenedorCards"  class="mt-5">
 
-            <div class="card-columns">
-                
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="container">
+                <div class="row">
+                  <div class="col-sm-12 mb-3">
+                    <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for names..">
                   </div>
                 </div>
+                <div class="row" id="myItems">
 
-                <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
+                    <div class="card-columns">
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"><a href="#">Alta velocidad-Zonas escolares</a></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">10 - 20 UMAs</h6>
+                              <p class="card-text">$754.9 - $1509.08  Penalización 6 puntos en licencia
+                                  Alta velocidad.  Art 9 Frac Ve)</p>
+                            </div>
+                          </div>
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"><a href="#">Vuelta en "U" prohibida</a></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">20 - 30 UMAs</h6>
+                              <p class="card-text">$1509.08 - $2264.7  Penalización 6 puntos en licencia
+                                  Alta velocidad.  Art 11 Frac VIII </p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"><a href="#">Celular</a></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">30 - 35 UMAs</h6>
+                              <p class="card-text">$2,264.70 - $2642.15 <br> Penalización 3 puntos en licencia
+                                  Manipulación de celular.  Art 38 Frac 2e)</p>
+                            </div>
+                          </div>
 
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"><a href="#">Alta velocidad</a></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">10 - 20 UMAs</h6>
+                              <p class="card-text">$754.9 - $1509.08  Penalización 3 puntos en licencia
+                                  Alta velocidad.  Art 9 Frac I, II, IIIe)</p>
+                            </div>
+                          </div>
 
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"><a href="#">Circulacion contraflujo o carril restringido</a></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">40 - 60 UMAs</h6>
+                              <p class="card-text">$3,379.60 - $5,069.40 </br>
+                                 Penalización 6 puntos en licencia
+                                 Remisión de vehículo al depósito
+                                 Art 19 IV</p>
+                            </div>
+                          </div>
 
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"><a href="#">Luz Roja</a></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">10 - 20 UMAs</h6>
+                              <p class="card-text">$ 754.90 0 - $ 1,509.80 <br> Penalización 3 puntos en licencia
+                                  Preferencias de Paso.  Art 10 Fracc VI inciso a)</p>
+                            </div>
+                          </div>
 
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                    </div>
-                  </div>
-            </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"><a href="#">Conducción en estado de ebriedad</a></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">Arresto 20-36 horas</h6>
+                              <p class="card-text"> Penalización 6 puntos en licencia
+                                  Alta velocidad.  Art 50 </p>
+                            </div>
+                          </div>
 
-            <div class="card-columns">
-                <div class="container">
-                    <div class="row">
-                      <div class="col-sm-12 mb-3">
-                        <input type="text" id="myFilter" class="form-control" onkeyup="myFunction()" placeholder="Search for names..">
-                      </div>
                     </div>
-                    <div class="row" id="myItems">
-                      <div class="col-sm-12 mb-3">
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card One</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some text.</p>
-                          </div>
-                        </div>
-                  
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card Two</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some text.</p>
-                          </div>
-                        </div>
-                  
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card Three</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some text.</p>
-                          </div>
-                        </div>
-                        
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title">Card Four</h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some text.</p>
-                          </div>
-                        </div>
-                        
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card Five</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some text.</p>
-                          </div>
-                        </div>
-                        
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card Six</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some text.</p>
-                          </div>
-                        </div>
-                        
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card Seven</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some text.</p>
-                          </div>
-                        </div>
-                        
-                        <div class="card">
-                          <div class="card-body">
-                            <h5 class="card-title"><a href="#">Card Eight</a></h5>
-                            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-                            <p class="card-text">Some text.</p>
-                          </div>
-                        </div>      
-                      </div>    
-                    </div>
-                  </div>
-            </div>
+                     
+                </div>
+              </div>
 
         </div>
 
     </div>
 
-    <footer></footer>
+
+    <footer class="page-footer font-small bg-dark text-light">
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a class="text-light" href=""> Multas CDMX</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+ 
       
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  </body>
+    <script src="./js/index.js"></script>
+</body>
 </html>
