@@ -71,6 +71,37 @@
                 <div class="row" id="myItems">
 
                     <div class="card-columns">
+
+                        <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"><a href="#">Sin Licencia</a></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">40 - 60 UMAs</h6>
+                              <p class="card-text">$844 - $1,689 </br>
+                                 Penalización 6 puntos en licencia</br>
+                                 Remisión de vehículo al depósito</br>
+                                 Art 19 IV</p>
+                            </div>
+                          </div>
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"><a href="#">Sin Tarjeta de Circulacion</a></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">40 - 60 UMAs</h6>
+                              <p class="card-text">$1,689 - $2,534 </br>
+                                 Penalización 6 puntos en licencia</br>
+                                 Remisión de vehículo al depósito</br>
+                                 Art 19 IV</p>
+                            </div>
+                          </div>
+                         
+                          <div class="card">
+                            <div class="card-body">
+                              <h5 class="card-title"><a href="#">Invadir área para ciclistas/motoristas</a></h5>
+                              <h6 class="card-subtitle mb-2 text-muted">20 - 30 UMAs</h6>
+                              <p class="card-text">$1,345 - $1,689 </br>
+                                 Penalización 3 puntos en licencia</br>
+                                 Art 19 V</p>
+                            </div>
+                          </div>
                         <div class="card">
                             <div class="card-body">
                               <h5 class="card-title"><a href="#">Alta velocidad-Zonas escolares</a></h5>
@@ -141,6 +172,103 @@
 
         </div>
 
+        <div class="my-4">
+            <h2>Link para denuncias</h2>
+
+            <a class="btn btn-primary " href="http://data.ssp.cdmx.gob.mx/dgip_denuncia.html" role="button">Denuncia aqui</a>
+            
+        </div>
+
+        <div class="my-4 py-3">
+
+            <form class="needs-validation mb-4" novalidate>
+                <div class="form-row">
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustom01">Nombre</label>
+                    <input type="text" class="form-control" id="validationCustom01" placeholder="First name" value="Jose" required>
+                    <div class="valid-feedback">
+                      Looks good!
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustom02">Apellido</label>
+                    <input type="text" class="form-control" id="validationCustom02" placeholder="Last name" value="Garcia" required>
+                    <div class="valid-feedback">
+                      
+                    </div>
+                  </div>
+                  <div class="col-md-4 mb-3">
+                    <label for="validationCustomUsername">Placa</label>
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        
+                      </div>
+                      <input type="text" class="form-control" id="validationCustomUsername" placeholder="1253221" aria-describedby="inputGroupPrepend" required>
+                      <div class="invalid-feedback">
+                        Placa del oficial
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row">
+                  <div class="col-md-6 mb-3">
+                    <label for="validationCustom03">Ciudad</label>
+                    <input type="text" class="form-control" id="validationCustom03" placeholder="Ciudad" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid city.
+                    </div>
+                  </div>
+                  <div class="col-md-3 mb-3">
+                    <label for="validationCustom04">Alcaldia</label>
+                    <input type="text" class="form-control" id="validationCustom04" placeholder="State" required>
+                    <div class="invalid-feedback">
+                      Please provide a valid state.
+                    </div>
+                  </div>
+                  
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Acepto los términos y condiciones. Mis datos estan protegidos.
+                    </label>
+                    <div class="invalid-feedback">
+                      No soy un robot
+                    </div>
+                  </div>
+                </div>
+                <button class="btn btn-primary" type="submit">Enviar</button>
+              </form>
+              
+              <script>
+              // Example starter JavaScript for disabling form submissions if there are invalid fields
+              (function() {
+                'use strict';
+                window.addEventListener('load', function() {
+                  // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                  var forms = document.getElementsByClassName('needs-validation');
+                  // Loop over them and prevent submission
+                  var validation = Array.prototype.filter.call(forms, function(form) {
+                    form.addEventListener('submit', function(event) {
+                      if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                      }
+                      form.classList.add('was-validated');
+                    }, false);
+                  });
+                }, false);
+              })();
+              </script>
+
+        </div>
+
+    </div>
+
+    <div>
+        <img src="https://mariomenesescpo.files.wordpress.com/2017/09/wp-image-1977490748.jpg?w=782&h=583&zoom=2" class="d-block mx-auto  my-5"> 
     </div>
 
 
